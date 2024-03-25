@@ -1,0 +1,73 @@
+$themeColor: rgb(175, 93, 196);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    section.logo {
+       
+        display: flex;
+        flex: 2 1 400px;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        img {
+            width: 6vw;
+            height: 6vw;
+        }
+    }
+    
+    nav  {
+        // border: 2px solid rgb(97, 197, 195);
+        flex: 5 1 500px;
+        
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+                
+                
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.3rem;
+                    transition: all 0.2s ease-in-out;
+                    padding-bottom: 0.3rem;
+
+                    &:hover {
+                        color: $themeColor;
+                        border-bottom: 2px solid $themeColor;
+                        
+                        
+                    }
+                }
+                
+        
+            }
+        }
+    
+        
+    }
+
+}
+
